@@ -2,7 +2,7 @@
 angular.module('sparkleApp', [])
 .controller('SparkleController', ['$scope', '$interval', function($scope, $interval) {
     const numSparkles = 7;
-    const imageUrls = Array.from({ length: 19 }, (_, i) => `./router-page-meshes/${i + 1}.png`);
+    const imageUrls = Array.from({ length: 19 }, (_, i) => `/router-page-meshes/${i + 1}.png`);
 
     function generateRandomStyle() {
         const randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
